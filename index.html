@@ -1,11 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube</title>
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
+
+
+
+
 <body>
-    
+
+    <div class="flex">
+
+
+        <!-- SIDE BAR SECTION -->
+        <div class="w-[18%] sticky top-0 overflow-y-auto overflow-x-hidden h-screen ">
+
+            <div class="flex items-center p-2 ml-3 space-x-3 sticky top-0 bg-white">
+                <div class="hover:bg-gray-200 hover:rounded-full p-1.5 cursor-pointer"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                            stroke-width="1.5" d="M4.5 12h15m-15 5.77h15M4.5 6.23h15" />
+                    </svg></div>
+
+                <img class="cursor-pointer" width="28x" src="./assets/images/youtube-svgrepo-com.svg"
+                    alt="youtube-logo">
+            </div>
+
+
+            <!-- HOME / SHORTS/ SUBSCRIBTION SECTION -->
+            <div class="px-3">
+                <!-- HOME SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z" />
+                    </svg>
+
+                    <p class="text-[14px]">Home</p>
+                </div>
+
+                <!-- SHORTS SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12.834 3.186a3.627 3.627 0 0 1 3.627 6.282l-.74.426a3.626 3.626 0 0 1 1.935 6.766l-7.02 4.053a3.626 3.626 0 1 1-3.627-6.28l.739-.428A3.627 3.627 0 0 1 5.814 7.24z" />
+                            <path fill="currentColor"
+                                d="M13.992 11.016L11.2 9.271c-.74-.463-1.7.07-1.7.942v3.49c0 .873.96 1.405 1.7.943l2.792-1.746a1.11 1.11 0 0 0 0-1.884" />
+                        </g>
+                    </svg>
+
+                    <p class="text-[14px]">Shorts</p>
+                </div>
+
+                <!-- SUBSCRIBTION SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M4 22q-.825 0-1.412-.587T2 20V10q0-.825.588-1.412T4 8h16q.825 0 1.413.588T22 10v10q0 .825-.587 1.413T20 22zm0-2h16V10H4zm6-1l6-4l-6-4zM4 7V5h16v2zm3-3V2h10v2zM4 20V10z" />
+                    </svg>
+
+                    <p class="text-[14px]">Subscribtion</p>
+                </div>
+
+                <!-- FIRST LINE -->
+                <hr class="text-gray-300 mt-2">
+
+                <!-- YOU / HISTORY SECTION  -->
+
+                <!-- YOU SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mt-2 mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 11q.825 0 1.413-.588Q14 9.825 14 9t-.587-1.413Q12.825 7 12 7q-.825 0-1.412.587Q10 8.175 10 9q0 .825.588 1.412Q11.175 11 12 11Zm0 2q-1.65 0-2.825-1.175Q8 10.65 8 9q0-1.65 1.175-2.825Q10.35 5 12 5q1.65 0 2.825 1.175Q16 7.35 16 9q0 1.65-1.175 2.825Q13.65 13 12 13Zm0 11q-2.475 0-4.662-.938q-2.188-.937-3.825-2.574Q1.875 18.85.938 16.663Q0 14.475 0 12t.938-4.663q.937-2.187 2.575-3.825Q5.15 1.875 7.338.938Q9.525 0 12 0t4.663.938q2.187.937 3.825 2.574q1.637 1.638 2.574 3.825Q24 9.525 24 12t-.938 4.663q-.937 2.187-2.574 3.825q-1.638 1.637-3.825 2.574Q14.475 24 12 24Zm0-2q1.8 0 3.375-.575T18.25 19.8q-.825-.925-2.425-1.612q-1.6-.688-3.825-.688t-3.825.688q-1.6.687-2.425 1.612q1.3 1.05 2.875 1.625T12 22Zm-7.7-3.6q1.2-1.3 3.225-2.1q2.025-.8 4.475-.8q2.45 0 4.463.8q2.012.8 3.212 2.1q1.1-1.325 1.713-2.95Q22 13.825 22 12q0-2.075-.788-3.887q-.787-1.813-2.15-3.175q-1.362-1.363-3.175-2.151Q14.075 2 12 2q-2.05 0-3.875.787q-1.825.788-3.187 2.151Q3.575 6.3 2.788 8.113Q2 9.925 2 12q0 1.825.6 3.463q.6 1.637 1.7 2.937Z" />
+                    </svg>
+                    <p class="text-[14px]">You</p>
+                </div>
+
+                <!-- HISTORY SECTION -->
+                <div class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 21q-3.45 0-6.012-2.287T3.05 13H5.1q.35 2.6 2.313 4.3T12 19q2.925 0 4.963-2.037T19 12t-2.037-4.962T12 5q-1.725 0-3.225.8T6.25 8H9v2H3V4h2v2.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924t1.925 2.85T21 12t-.712 3.513t-1.925 2.85t-2.85 1.925T12 21m2.8-4.8L11 12.4V7h2v4.6l3.2 3.2z" />
+                    </svg>
+                    <p class="text-[14px]">History</p>
+                </div>
+
+                <!-- SECOND LINE -->
+                <hr class="text-gray-300 mt-2">
+
+                <!-- SIGN IN TEXT SECTION -->
+                <div class=" items-center p-3  space-x-5  w-[100%] ">
+                    <p class="text-[14px]">Sign in to like videos, <br> comment, and subscribe.</p>
+                    <!-- SIGN IN SECTION -->
+                    <div
+                        class="flex items-center space-x-2 text-blue-700 border-1 border-gray-200 rounded-[20px] py-1 px-2 w-23 mt-2 hover:bg-blue-100 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 11q.825 0 1.413-.588Q14 9.825 14 9t-.587-1.413Q12.825 7 12 7q-.825 0-1.412.587Q10 8.175 10 9q0 .825.588 1.412Q11.175 11 12 11Zm0 2q-1.65 0-2.825-1.175Q8 10.65 8 9q0-1.65 1.175-2.825Q10.35 5 12 5q1.65 0 2.825 1.175Q16 7.35 16 9q0 1.65-1.175 2.825Q13.65 13 12 13Zm0 11q-2.475 0-4.662-.938q-2.188-.937-3.825-2.574Q1.875 18.85.938 16.663Q0 14.475 0 12t.938-4.663q.937-2.187 2.575-3.825Q5.15 1.875 7.338.938Q9.525 0 12 0t4.663.938q2.187.937 3.825 2.574q1.637 1.638 2.574 3.825Q24 9.525 24 12t-.938 4.663q-.937 2.187-2.574 3.825q-1.638 1.637-3.825 2.574Q14.475 24 12 24Zm0-2q1.8 0 3.375-.575T18.25 19.8q-.825-.925-2.425-1.612q-1.6-.688-3.825-.688t-3.825.688q-1.6.687-2.425 1.612q1.3 1.05 2.875 1.625T12 22Zm-7.7-3.6q1.2-1.3 3.225-2.1q2.025-.8 4.475-.8q2.45 0 4.463.8q2.012.8 3.212 2.1q1.1-1.325 1.713-2.95Q22 13.825 22 12q0-2.075-.788-3.887q-.787-1.813-2.15-3.175q-1.362-1.363-3.175-2.151Q14.075 2 12 2q-2.05 0-3.875.787q-1.825.788-3.187 2.151Q3.575 6.3 2.788 8.113Q2 9.925 2 12q0 1.825.6 3.463q.6 1.637 1.7 2.937Z" />
+                        </svg>
+
+                        <p class="text-[14px]">Sign in</p>
+                    </div>
+                </div>
+
+                <!-- THIRD LINE -->
+                <hr class="text-gray-300 mt-2">
+
+
+                <!-- EXPLORE SECTION -->
+
+
+                <!-- EXPLORE TEXT -->
+                <div class="flex items-center p-3  space-x-5  w-[100%] mb-[-10px] cursor-pointer">
+
+                    <p class="text-[18px] font-semibold">Exolore</p>
+                </div>
+
+                <!-- TRENDING SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 14 14">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M5.495.126A.89.89 0 0 1 6.379.11c3.987 1.852 6.244 5.698 6.105 8.914c-.06 1.351-.543 2.602-1.48 3.515c-.938.914-2.285 1.448-3.99 1.451a5.186 5.186 0 0 1-5.502-4.967v-.008a4.38 4.38 0 0 1 2.251-3.94a.5.5 0 0 1 .7.235A5 5 0 0 0 5.47 6.796c.494-.645.722-1.478.715-2.394c-.008-1.09-.35-2.259-.924-3.254A.76.76 0 0 1 5.495.126"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <p class="text-[14px]">Trending</p>
+                </div>
+
+                <!-- MUSIC SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                            <circle cx="6" cy="18" r="3" stroke-linejoin="round" />
+                            <path stroke-linejoin="round" d="M9 18V5" />
+                            <path d="M21 3L9 5m12 2L9 9" />
+                            <circle cx="18" cy="16" r="3" stroke-linejoin="round" />
+                            <path stroke-linejoin="round" d="M21 16V3" />
+                        </g>
+                    </svg>
+
+                    <p class="text-[14px]">Music</p>
+                </div>
+
+
+                <!-- GAMING SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 13V8l-5-3l-5 3l-5-3l-5 3v5l10 6zM9 11H7v2H6v-2H4v-1h2V8h1v2h2zm6 2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1m3-2c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1" />
+                    </svg>
+
+                    <p class="text-[14px]">Gaming</p>
+                </div>
+
+                <!-- SPORTS SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12.787 5.807a.75.75 0 0 1 .463.693v4a.75.75 0 0 1-1.5 0V8.31l-.22.22a.75.75 0 1 1-1.06-1.06l1.5-1.5a.75.75 0 0 1 .817-.163" />
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M7.498 1.607A27 27 0 0 1 12 1.25c1.828 0 3.339.161 4.502.357l.135.023c1.01.169 1.85.31 2.506 1.118c.421.519.557 1.08.588 1.705l.492.164c.463.154.87.29 1.191.44c.348.162.667.37.911.709s.341.707.385 1.088c.04.353.04.78.04 1.27v.144c0 .402 0 .757-.03 1.054c-.032.321-.103.634-.28.936c-.179.303-.418.517-.683.701c-.245.17-.555.343-.907.538l-2.64 1.467c-.54 1.061-1.28 2.007-2.3 2.69c-.875.587-1.922.959-3.16 1.065v2.031h1.43a1.75 1.75 0 0 1 1.716 1.407l.219 1.093H18a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5h1.885l.219-1.093A1.75 1.75 0 0 1 9.82 18.75h1.43v-2.031c-1.238-.106-2.285-.478-3.16-1.064c-1.019-.684-1.76-1.63-2.3-2.691l-2.64-1.467a11 11 0 0 1-.907-.538a2.2 2.2 0 0 1-.682-.7a2.2 2.2 0 0 1-.281-.937c-.03-.297-.03-.652-.03-1.054v-.145c0-.488 0-.916.04-1.269c.044-.381.14-.75.385-1.088c.244-.339.563-.547.91-.71c.323-.15.729-.285 1.192-.439l.492-.164c.031-.626.167-1.186.588-1.705c.657-.809 1.496-.95 2.507-1.118zM9.415 21.25h5.17l-.16-.799a.25.25 0 0 0-.245-.201H9.82a.25.25 0 0 0-.245.201zM4.302 6.023c.072 1.52.243 3.2.671 4.77l-1.066-.591c-.389-.217-.633-.353-.809-.475c-.162-.113-.215-.18-.244-.23c-.03-.05-.062-.128-.082-.324a11 11 0 0 1-.022-.938v-.073c0-.539.001-.88.03-1.138c.028-.238.072-.327.112-.381c.039-.055.109-.125.326-.226c.236-.11.56-.219 1.07-.39zm14.725 4.77l1.066-.591c.389-.217.633-.353.809-.475c.162-.113.215-.18.244-.23c.03-.05.062-.128.082-.324c.021-.214.022-.493.022-.938v-.073c0-.539-.001-.88-.03-1.138c-.028-.238-.072-.327-.112-.381c-.039-.055-.109-.125-.326-.226c-.236-.11-.56-.219-1.07-.39l-.014-.004c-.071 1.52-.243 3.2-.67 4.77M12 2.75c-1.74 0-3.167.153-4.252.336c-1.207.204-1.46.28-1.726.608c-.262.322-.287.628-.234 1.983c.09 2.258.388 4.696 1.31 6.55c.456.914 1.052 1.662 1.828 2.182c.77.517 1.765.841 3.074.841c1.31 0 2.304-.324 3.075-.841c.776-.52 1.371-1.268 1.826-2.183c.923-1.853 1.221-4.29 1.31-6.55c.055-1.354.03-1.66-.232-1.982c-.266-.328-.52-.404-1.727-.608A25.6 25.6 0 0 0 12 2.75"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <p class="text-[14px]">Sports</p>
+                </div>
+
+                <!-- PODCASTS SECTION -->
+                <div
+                    class="flex items-center p-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11 22v-8.275q-.45-.275-.725-.712T10 12q0-.825.588-1.412T12 10t1.413.588T14 12q0 .575-.275 1.025t-.725.7V22zm-5.9-2.75q-1.425-1.375-2.262-3.238T2 12q0-2.075.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12q0 2.15-.837 4.025T18.9 19.25l-1.4-1.4q1.15-1.1 1.825-2.613T20 12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12q0 1.725.675 3.225t1.85 2.6zm2.825-2.825q-.875-.825-1.4-1.963T6 12q0-2.5 1.75-4.25T12 6t4.25 1.75T18 12q0 1.325-.525 2.475t-1.4 1.95L14.65 15q.625-.575.988-1.35T16 12q0-1.65-1.175-2.825T12 8T9.175 9.175T8 12q0 .9.363 1.663T9.35 15z" />
+                    </svg>
+                    <p class="text-[14px]">Podcasts</p>
+                </div>
+            </div>
+
+
+            <!-- FOURTH LINE -->
+            <hr class="text-gray-300 mt-2">
+
+            <!-- MORE FROM YOUTUBE SECTION -->
+
+            <!-- MORE FROM YOUTUBE TEXT -->
+            <div class="flex items-center ml-6 py-3  space-x-5  w-[100%] mb-[-10px] ">
+
+                <p class="text-[18px] font-semibold">More from YouTube</p>
+            </div>
+
+
+            <!-- YOUTUBE PREMIUM SECTION -->
+            <div
+                class="flex items-center ml-5 py-3 space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <img width="25px" src="./assets/images/youtube-svgrepo-com.svg" alt="">
+                <p class="text-[14px]">YouTube Premium</p>
+            </div>
+
+            <!-- YOUTUBE MUSIC SECTION -->
+            <div
+                class="flex items-center ml-5 py-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <img width="25px" src="./assets/images/YouTube-Music.svg" alt="">
+                <p class="text-[14px]">YouTube Music</p>
+            </div>
+
+
+            <!-- YOUTUBE KIDS SECTION -->
+            <div
+                class="flex items-center ml-5 py-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <img width="25px" src="./assets/images/YouTube-kids.svg" alt="">
+                <p class="text-[14px]">YouTube Kids</p>
+            </div>
+
+
+            <!-- FIFTH LINE -->
+            <hr class="text-gray-300 mt-2">
+
+            <div
+            class="flex items-center ml-5 pb-3 pt-5  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.49.49 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.6.6 0 0 0-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1q.09.03.18.03c.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64zm-1.98-1.71c.04.31.05.52.05.73s-.02.43-.05.73l-.14 1.13l.89.7l1.08.84l-.7 1.21l-1.27-.51l-1.04-.42l-.9.68c-.43.32-.84.56-1.25.73l-1.06.43l-.16 1.13l-.2 1.35h-1.4l-.19-1.35l-.16-1.13l-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7l-1.06.43l-1.27.51l-.7-1.21l1.08-.84l.89-.7l-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13l-.89-.7l-1.08-.84l.7-1.21l1.27.51l1.04.42l.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43l.16-1.13l.2-1.35h1.39l.19 1.35l.16 1.13l1.06.43c.43.18.83.41 1.23.71l.91.7l1.06-.43l1.27-.51l.7 1.21l-1.07.85l-.89.7zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2"/></svg>
+            <p class="text-[14px]">Settings</p>
+        </div>
+
+        <div
+                class="flex items-center ml-5 py-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.382 14.72s1.089-1.088 4.353-1.088c3.265 0 3.265 2.177 6.53 2.177a11.3 11.3 0 0 0 4.353-1.088V3.838a11.3 11.3 0 0 1-4.353 1.088C12 4.926 12 2.75 8.735 2.75c-3.264 0-4.353 1.088-4.353 1.088m0 17.412V3.838"/></svg>
+                <p class="text-[14px]">Report history</p>
+            </div>
+
+            <div
+                class="flex items-center ml-5 py-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m-1-4h2v2h-2zm1.61-9.96c-2.06-.3-3.88.97-4.43 2.79c-.18.58.26 1.17.87 1.17h.2c.41 0 .74-.29.88-.67c.32-.89 1.27-1.5 2.3-1.28c.95.2 1.65 1.13 1.57 2.1c-.1 1.34-1.62 1.63-2.45 2.88c0 .01-.01.01-.01.02c-.01.02-.02.03-.03.05c-.09.15-.18.32-.25.5c-.01.03-.03.05-.04.08c-.01.02-.01.04-.02.07c-.12.34-.2.75-.2 1.25h2c0-.42.11-.77.28-1.07c.02-.03.03-.06.05-.09c.08-.14.18-.27.28-.39c.01-.01.02-.03.03-.04c.1-.12.21-.23.33-.34c.96-.91 2.26-1.65 1.99-3.56c-.24-1.74-1.61-3.21-3.35-3.47"/></svg>
+                <p class="text-[14px]">Help</p>
+            </div>
+
+
+            <div
+                class="flex items-center ml-5 py-3  space-x-5 hover:bg-gray-200 hover:rounded w-[100%] mb-[-3px] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12 15q.425 0 .713-.288T13 14t-.288-.712T12 13t-.712.288T11 14t.288.713T12 15m-1-4h2V5h-2zM2 22V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                <p class="text-[14px]">Send feedback</p>
+            </div>
+
+            <!-- SIXTH LINE -->
+            <hr class="text-gray-300 mt-2">
+
+            <div class="flex flex-col ml-6 py-3  space-x-5  w-[100%] mb-[-10px] ">
+
+                <a class="text-[13px]"  href="#">About Press Copyright Contact us Creators Advertise Developers</a>
+
+                    <a class="text-[13px] mt-3" href="#">Terms Privacy Policy & SafetyHow YouTube worksTest new features</a>
+                    <p class="text-[12px] mt-3 text-gray-500">© 2025 Google LLC</p>
+            </div>
+
+            
+
+
+
+
+        </div>
+
+
+        <!-- MAIN SECTION -->
+        <div class="w-[82%] bg-amber-950 ">1</div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
+
 </html>

@@ -18,7 +18,7 @@
 
 
         <!-- SIDE BAR SECTION -->
-        <div class="w-[18%] sticky top-0 overflow-y-auto overflow-x-hidden h-screen ">
+        <div class="w-[18%] sticky top-0 overflow-y-auto overflow-x-hidden h-screen  ">
 
             <div class="flex items-center p-2 ml-3 space-x-2 sticky top-0 bg-white">
                 <div class="hover:bg-gray-200 hover:rounded-full p-1.5 cursor-pointer"><svg
@@ -301,66 +301,475 @@
         <!-- MAIN SECTION -->
         <div class="w-[82%] bg-white">
             <!------------------------------------------------>
-            <div class="flex items-center pt-3">
 
-                <div class="flex items-center justify-center  relative translate-x-30">
+            <!-- SEARCH BAR SECTION -->
+            <div class="bg-white sticky top-0">
 
-                    <!-- INPUT SEARCH SECTION -->
-                    <div class="relative space-x-3">
-                        <input class="w-[580px] outline-1 outline-gray-300 p-2 pl-4 rounded-[30px]" type="text"
-                            placeholder="Search">
+                <div class="flex items-center pt-3  ">
+
+                    <div class="flex items-center justify-center  relative translate-x-30">
+
+                        <!-- INPUT SEARCH SECTION -->
+                        <div class="relative space-x-20">
+                            <input class="w-[520px] outline-1 outline-gray-300 p-2 pl-4 rounded-l-[30px] " type="text"
+                                placeholder="Search">
 
 
-                        <!-- INPUTS'S SEARCH ICON SECTION -->
+                            <!-- INPUTS'S SEARCH ICON SECTION -->
+                            <div
+                                class="text-gray-500 absolute bottom-[0px] left-[520px] hover:bg-gray-200 bg-gray-100 w-15 h-[40px] flex items-center justify-center rounded-r-3xl cursor-pointer outline-1 outline-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- MIC SECTION -->
                         <div
-                            class="text-gray-500 absolute bottom-[0px] left-[520px] hover:bg-gray-200 bg-gray-100 w-15 h-[40px] flex items-center justify-center rounded-r-3xl cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24">
+                            class="hover:bg-gray-200 bg-gray-100 w-10 h-10 rounded-full justify-center items-center flex cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                 <path fill="currentColor"
-                                    d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                                    d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2t2.125.875T15 5v6q0 1.25-.875 2.125T12 14m-1 7v-3.075q-2.6-.35-4.3-2.325T5 11h2q0 2.075 1.463 3.538T12 16t3.538-1.463T17 11h2q0 2.625-1.7 4.6T13 17.925V21z" />
                             </svg>
                         </div>
+
+
+
+                        <!-- SIGN IN / 3 DOTS SECTIONS -->
+                    </div>
+                    <!-- 3 DOTS SECTION -->
+                    <div class="flex flex-1 items-center space-x-3 justify-end pr-3 cursor-pointer">
+                        <div class="text-gray-400 "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0-6c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0 12c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2" />
+                            </svg></div>
+
+                        <!-- SIGN IN SECTION -->
+                        <div
+                            class="flex items-center space-x-2 text-blue-700 border-1 border-gray-200 rounded-[20px] py-2 px-2 w-25 hover:bg-blue-100 cursor-pointer ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 11q.825 0 1.413-.588Q14 9.825 14 9t-.587-1.413Q12.825 7 12 7q-.825 0-1.412.587Q10 8.175 10 9q0 .825.588 1.412Q11.175 11 12 11Zm0 2q-1.65 0-2.825-1.175Q8 10.65 8 9q0-1.65 1.175-2.825Q10.35 5 12 5q1.65 0 2.825 1.175Q16 7.35 16 9q0 1.65-1.175 2.825Q13.65 13 12 13Zm0 11q-2.475 0-4.662-.938q-2.188-.937-3.825-2.574Q1.875 18.85.938 16.663Q0 14.475 0 12t.938-4.663q.937-2.187 2.575-3.825Q5.15 1.875 7.338.938Q9.525 0 12 0t4.663.938q2.187.937 3.825 2.574q1.637 1.638 2.574 3.825Q24 9.525 24 12t-.938 4.663q-.937 2.187-2.574 3.825q-1.638 1.637-3.825 2.574Q14.475 24 12 24Zm0-2q1.8 0 3.375-.575T18.25 19.8q-.825-.925-2.425-1.612q-1.6-.688-3.825-.688t-3.825.688q-1.6.687-2.425 1.612q1.3 1.05 2.875 1.625T12 22Zm-7.7-3.6q1.2-1.3 3.225-2.1q2.025-.8 4.475-.8q2.45 0 4.463.8q2.012.8 3.212 2.1q1.1-1.325 1.713-2.95Q22 13.825 22 12q0-2.075-.788-3.887q-.787-1.813-2.15-3.175q-1.362-1.363-3.175-2.151Q14.075 2 12 2q-2.05 0-3.875.787q-1.825.788-3.187 2.151Q3.575 6.3 2.788 8.113Q2 9.925 2 12q0 1.825.6 3.463q.6 1.637 1.7 2.937Z" />
+                            </svg>
+
+                            <p class="text-[14px]">Sign in</p>
+                        </div>
+
                     </div>
 
-                    <!-- MIC SECTION -->
-                    <div
-                        class="hover:bg-gray-200 bg-gray-100 w-10 h-10 rounded-full justify-center items-center flex cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2t2.125.875T15 5v6q0 1.25-.875 2.125T12 14m-1 7v-3.075q-2.6-.35-4.3-2.325T5 11h2q0 2.075 1.463 3.538T12 16t3.538-1.463T17 11h2q0 2.625-1.7 4.6T13 17.925V21z" />
-                        </svg>
-                    </div>
 
 
-
-                    <!-- SIGN IN / 3 DOTS SECTIONS -->
-                </div>
-                <!-- 3 DOTS SECTION -->
-                <div class="flex flex-1 items-center space-x-3 justify-end pr-3 cursor-pointer">
-                    <div class="text-gray-400 "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                            viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0-6c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0 12c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2" />
-                        </svg></div>
-
-                    <!-- SIGN IN SECTION -->
-                    <div
-                        class="flex items-center space-x-2 text-blue-700 border-1 border-gray-200 rounded-[20px] py-2 px-2 w-25 hover:bg-blue-100 cursor-pointer ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M12 11q.825 0 1.413-.588Q14 9.825 14 9t-.587-1.413Q12.825 7 12 7q-.825 0-1.412.587Q10 8.175 10 9q0 .825.588 1.412Q11.175 11 12 11Zm0 2q-1.65 0-2.825-1.175Q8 10.65 8 9q0-1.65 1.175-2.825Q10.35 5 12 5q1.65 0 2.825 1.175Q16 7.35 16 9q0 1.65-1.175 2.825Q13.65 13 12 13Zm0 11q-2.475 0-4.662-.938q-2.188-.937-3.825-2.574Q1.875 18.85.938 16.663Q0 14.475 0 12t.938-4.663q.937-2.187 2.575-3.825Q5.15 1.875 7.338.938Q9.525 0 12 0t4.663.938q2.187.937 3.825 2.574q1.637 1.638 2.574 3.825Q24 9.525 24 12t-.938 4.663q-.937 2.187-2.574 3.825q-1.638 1.637-3.825 2.574Q14.475 24 12 24Zm0-2q1.8 0 3.375-.575T18.25 19.8q-.825-.925-2.425-1.612q-1.6-.688-3.825-.688t-3.825.688q-1.6.687-2.425 1.612q1.3 1.05 2.875 1.625T12 22Zm-7.7-3.6q1.2-1.3 3.225-2.1q2.025-.8 4.475-.8q2.45 0 4.463.8q2.012.8 3.212 2.1q1.1-1.325 1.713-2.95Q22 13.825 22 12q0-2.075-.788-3.887q-.787-1.813-2.15-3.175q-1.362-1.363-3.175-2.151Q14.075 2 12 2q-2.05 0-3.875.787q-1.825.788-3.187 2.151Q3.575 6.3 2.788 8.113Q2 9.925 2 12q0 1.825.6 3.463q.6 1.637 1.7 2.937Z" />
-                        </svg>
-
-                        <p class="text-[14px]">Sign in</p>
-                    </div>
 
                 </div>
+
+
+
+
+
+                <!-- ALL / MUSIC ETC MENU SECTION -->
+                <div class="p-3 mt-3 sticky top-[52px] bg-white">
+                    <ul class=" flex space-x-5 items-center justify-between">
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">All</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Music</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Gaming</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">T-Series</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Architecture</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Nature documentries</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">4K
+                                resolution</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Tamil Cinema</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Camping</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Live</a></li>
+                        <li><a class="bg-gray-200 rounded px-2 py-1 text-[14px] font-semibold hover:bg-gray-300"
+                                href="#">Dramedy</a></li>
+                    </ul>
+                </div>
+
+
 
             </div>
 
 
 
+            <!-- VIDEOS SECTION & SHORTS SECTION -->
+            <div class="p-3">
+
+                <!-- VIDEOS SECTION 1 -->
+                <div class="flex items-center justify-between">
+
+                    <!--CARD ONE -->
+                    <div class="max-w-[350px] m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover"
+                                src="https://i.ytimg.com/vi/AiF5JNrRSUI/maxresdefault.jpg" alt="">
+                        </div>
 
 
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px] ">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/BUp_RGMNx21asWdmkCSN0X9QoBAARyCXxG_cnC-Zd4_8xARZDgRDVjbhSa99jmoy4z9bdbNy=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">Youtube Thumbnail Design, Let's create
+                                Trending Youtube Thumbnail In Photoshop</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Sofikul Fakir</p>
+                            <p>5.2M views 1 month ago</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- CARD TWO -->
+                    <div class="max-w-[350px] m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover"
+                                src="https://i.ytimg.com/vi/Nii_fBGb0_c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDU-hiECHiIdVG13fPWK_n01KLbSg"
+                                alt="">
+                        </div>
+
+
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px]">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/qCpMzVfHqEFzcIWzBEfqobkWOytWCVrBJK9mHXFgSiARdo4iHTABdC3uYH3AUyECNSwGyhausQ=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">Youtube Thumbnail Design, Let's create
+                                Trending Youtube Thumbnail In Photoshop</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Nour Art</p>
+                            <p>257K views
+                                19 hours ago</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CARD THREE -->
+                    <div class="max-w-[350px] m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover"
+                                src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/378650325/original/ed742f027a21998f41a859eca1d459b85cc6ad67/create-best-premium-youtube-thumbnail-design.jpg"
+                                alt="">
+                        </div>
+
+
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px] ">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/r7NqZBMld0PrtinJxaW6Z_U8XnyKI0hZ8-jxZIxumVoAgEIcXR4v70pEB2otssB299r1-geJAw=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">Youtube Thumbnail Design, Let's create
+                                Trending Youtube Thumbnail In Photoshop</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Code Grid</p>
+                            <p>3.8K views
+                                21 hours ago</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+                <!-- SHORTS SECTION -->
+                <div class="mt-3">
+
+                    <!-- SHORTS TITLE -->
+                    <div class="flex items-center">
+                        <img class="pt-3.5" width="45px" src="/assets/images/shorts.svg" alt="">
+                        <p class="font-bold text-[24px] ">Shorts</p>
+                    </div>
+
+                    <!-- SHORTS VIDEO SECTION -->
+                    <div class="flex items-center justify-evenly mt-2">
+
+                        <!-- CARD ONE -->
+                        <div class="cursor-pointer">
+                            <img class="rounded-[15px] " width="200px"
+                                src="https://i.ytimg.com/vi/sFCf6BQMtwM/hq720.jpg?sqp=-oaymwEoCJUDENAFSFryq4qpAxoIARUAAIhC0AEB2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCoIpvbX8knVWAWe5lYKnP_V8KVdw"
+                                alt="">
+
+                            <div class="flex mt-1">
+
+                                <p class=" max-w-[180px] line-clamp-2 font-semibold">
+                                    I Ate The Largest Meal In Dubai! 🍽</p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined -->
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                        d="M12 6h0m0 6h0m0 6h0" />
+                                </svg>
+
+                            </div>
+
+                            <p class="text-[14px]">29M views</p>
+
+                        </div>
+
+
+
+                        <!-- CARD TWO -->
+                        <div class="cursor-pointer">
+                            <img class="rounded-[15px] " width="200px" src="./assets/images/shorts-3.png" alt="">
+
+                            <div class="flex mt-1">
+
+                                <p class=" max-w-[180px] line-clamp-2 font-semibold">
+                                    Sacred Sanctuaries: Timeless Beauty of Temples</p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined -->
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                        d="M12 6h0m0 6h0m0 6h0" />
+                                </svg>
+
+                            </div>
+
+                            <p class="text-[14px]">300K views</p>
+
+                        </div>
+
+
+                        <!-- CARD THREE -->
+                        <div class="cursor-pointer">
+                            <img class="rounded-[15px] " width="200px" src="./assets/images/shoe.png" alt="">
+
+                            <div class="flex mt-1">
+
+                                <p class=" max-w-[180px] line-clamp-2 font-semibold">
+                                    Expressive Strokes: The Beauty of Creativity</p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined -->
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                        d="M12 6h0m0 6h0m0 6h0" />
+                                </svg>
+
+                            </div>
+
+                            <p class="text-[14px]">7M views</p>
+
+                        </div>
+
+
+
+                        <!-- CARD FOUR -->
+                        <div class="cursor-pointer">
+                            <img class="rounded-[15px]" width="200px" src="./assets/images/shorts-2.png" alt="">
+
+                            <div class="flex mt-1">
+
+                                <p class=" max-w-[180px] line-clamp-2 font-semibold">
+                                    Feathered Creatures: Nature’s Aerial Wonders</p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined -->
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                        d="M12 6h0m0 6h0m0 6h0" />
+                                </svg>
+
+                            </div>
+
+                            <p class="text-[14px]">100K views</p>
+
+                        </div>
+
+
+
+                        <!-- CARD FIVE -->
+                        <div class="cursor-pointer">
+                            <img class="rounded-[15px]" width="200px" src="./assets/images/shorts-1.png" alt="">
+
+                            <div class="flex mt-1">
+
+                                <p class=" max-w-[180px] line-clamp-2 font-semibold">
+                                    Graceful Wings: The Beauty of Birds</p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined -->
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                        d="M12 6h0m0 6h0m0 6h0" />
+                                </svg>
+
+                            </div>
+
+                            <p class="text-[14px]">634K views</p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- VIDEOS SECTION 2 -->
+                <div class="flex items-center justify-between my-10 ">
+
+                    <!--CARD ONE -->
+                    <div class="    m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover "
+                                src="https://img.freepik.com/free-photo/thachomphu-railway-bridge-white-bridge-sunrise-lamphun-thailand_335224-788.jpg?ga=GA1.1.1960474453.1715493947&semt=ais_hybrid"
+                                alt="">
+                        </div>
+
+
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px] ">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/Nk4nTnTdU44JFXnP78rs_wG1c2_Hfxa_Cj4WI8rXbEfQnfcnfhj0BL2SxdypTuDTu4dk8kS5vg=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">
+                                Golden Sunrise: A Beautiful New Morning Begins" 🌅✨</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Edge View</p>
+                            <p>656K views 6 month ago</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- CARD TWO -->
+                    <div class="max-w-[350px] m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover"
+                                src="https://img.freepik.com/free-photo/view-spectacular-nature-landscape_23-2150763698.jpg?ga=GA1.1.1960474453.1715493947&semt=ais_hybrid"
+                                alt="">
+                        </div>
+
+
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px]">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/ytc/AIdro_mxy4wokDR4de_tMaaK3wss9cujHFDrwqsrxbGIeAilXso=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">Embracing the Warmth of Sunshine" ☀️✨
+                            </p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Neon Sight</p>
+                            <p>297K views
+                                5 hours ago</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CARD THREE -->
+                    <div class="max-w-[350px] m-1 cursor-pointer">
+                        <div>
+                            <img class="rounded-[15px] w-[350px] h-[200px] object-cover"
+                                src="https://img.freepik.com/free-photo/corporate-businessman-giving-presentation-large-audience_53876-101865.jpg?ga=GA1.1.1960474453.1715493947&semt=ais_hybrid"
+                                alt="">
+                        </div>
+
+
+                        <div class="py-2 flex items-start justify-around space-x-1 px-0.5 mb-[-5px] ">
+                            <img class="rounded-full" width="35px"
+                                src="https://yt3.ggpht.com/ATJuCH36wHPiFwumVBm423ouLVGQtq2pkPMOlSCclqqXErazOWyl4n07MRmbFnSJTL5P02Fq=s68-c-k-c0x00ffffff-no-rj"
+                                alt="">
+
+                            <p class="max-w-[270px]  line-clamp-2 font-semibold">Leadership is about vision, courage,
+                                and inspiring others to achieve greatness together." 🚀✨</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                                    d="M12 6h0m0 6h0m0 6h0" />
+                            </svg>
+
+                        </div>
+
+
+                        <div class="text-[14px] text-gray-700 ml-11 ">
+                            <p class="hover:text-black">Dhruv Rathee</p>
+                            <p>3.8K views
+                                3 hours ago</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
 
 
 
